@@ -1,0 +1,99 @@
+Q.1
+class vehicle:
+    def __init__(self,name_of_variable,max_speed,average_of_vehicle):
+        self.name_of_variable=name_of_variable
+        self.max_speed=max_speed
+        self.average_of_vehicle=average_of_vehicle
+        
+        
+Q.2
+class child(vehicle):
+    def seating_capacity(self,capacity):
+        return name_of_variable,capacity
+        
+        
+        
+Q.3(multiple inheritance)
+
+class class1:
+    def test_class1(self):
+        return "1"
+       
+       
+class class2:
+    def test_class2(self):
+        return "2"    
+       
+class class3(class1,class2):
+    def test_class3(self):
+        pass
+        
+// When a class is derived from more than one base class it is called multiple Inheritance.
+
+
+
+Q.4(getter and setter)
+
+In Python, getters and setters are not the same as those in other object-oriented programming languages.
+Basically, the main purpose of using getters and setters in object-oriented programs is to ensure data encapsulation.
+Private variables in python are not actually hidden fields like in other object oriented languages. Getters and Setters in python are often used when:
+
+-We use getters & setters to add validation logic around getting and setting a value.
+-To avoid direct access of a class field i.e. private variables cannot be accessed directly or modified by external user.
+
+
+eg.
+class Prateek:
+    def __init__(self,name,age):
+        self._age=age
+        
+def get_age(self):
+    return self._age
+    
+def get_age(self):
+    return self._age    
+    
+    
+    
+Q.5(method overriding)
+
+ When a method in a subclass has the same name, same parameters or signature and same return type(or sub-type) as a method in its super-class,
+ then the method in the subclass is said to override the method in the super-class.
+ 
+ eg.
+
+class Parent():
+	
+  
+	def __init__(self):
+		self.value = "Inside Parent"
+		
+
+	def show(self):
+		print(self.value)
+		
+# Defining child class
+class Child(Parent):
+	
+	
+	def __init__(self):
+		self.value = "Inside Child"
+		
+
+	def show(self):
+		print(self.value)
+		
+		
+
+obj1 = Parent()
+obj2 = Child()
+
+obj1.show()
+obj2.show()
+
+o/p-
+Inside Parents
+Inside child
+
+
+    
